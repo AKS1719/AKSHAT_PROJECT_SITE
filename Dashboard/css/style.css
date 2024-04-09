@@ -1,0 +1,76 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.7rem;
+    background-color: black;
+    color: white;
+}
+.head h1{
+    animation: slideRight 1s ease;
+}
+
+.head img{
+    margin-left: 20px;
+    height: 75%;
+    border-radius: 100%;
+    animation: slideRight 1s ease;
+    opacity: 1;
+}
+.head::before{
+    content: "";
+    background: black;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    animation: slideRight 1s ease;
+    z-index: -1;
+}
+
+.projects-card{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,10fr)) ;
+}
+
+.card{
+    border-radius: 10%;
+    margin: 10px;
+    height: 20rem;
+    background-color: red;
+
+}
+
+#clock{
+    background-image: url("/Dashboard/images/clc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#music{
+    background-image: url("/Dashboard/images/msc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 0.3;
+    }
+    
+}
