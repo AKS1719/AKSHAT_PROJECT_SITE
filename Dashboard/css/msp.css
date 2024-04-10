@@ -69,8 +69,6 @@ body{
     width: calc(100% - 270px);
 }
 
-.player 
-
 .player #controlsBtn{
     margin-top: 7px;
 }
@@ -79,13 +77,6 @@ body{
     border: 0;
 }
 
-#pausebuttton{
-    src: url(/Dashboard/images/pause.png);
-}
-
-#playbuttton{
-    src: url(/Dashboard/images/play.png);
-}
 
 @media only screen and (max-width: 768px) {
     .SongsMenu{

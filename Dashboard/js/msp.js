@@ -125,11 +125,11 @@ function playPause()
     if(audio.paused==false)
     {
         audio.pause();
-        playPause.innerHTML = `<img src="/Dashboard/images/pause.png" alt="">`
+        playPause.innerHTML = `<img src="/Dashboard/images/play.png" alt="">`
     }
     else{
         audio.play();
-        playPause.innerHTML = `<img src="/Dashboard/images/play.png" alt="">`
+        playPause.innerHTML = `<img src="/Dashboard/images/pause.png" alt="">`
     }
 }
 
