@@ -96,6 +96,7 @@ body{
     }
     .player .track{
         height: 20vh;
+        width: 200px;
         flex-direction: column;
     }
     .player .track h4{
@@ -104,5 +105,7 @@ body{
     .player #controlsBtn{
         display: flex;
         margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
     }
 }
