@@ -6,148 +6,103 @@
 body{
     margin: 0px;
     padding: 0;
-    background-color: #fec;
-    background: url("https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bXVzaWMlMjBiYWNrZ3JvdW5kfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
     font-family: cursive;
 }
 
-main{
+.main{
     height: 100vh;
+    background-color: black;
 }
-
-.side-bar
-{
-    /* background-color: white; */
-    align-self: left;
-    height: 100vh;
-    width: 20vw;
-    /* border: 1px solid white; */
-    float: right;
-    border-radius: 5px;
-    /* scr */
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-.side-bar:hover{
-    border: 2px solid gold;
-}
-
-.side-bar button{
-    /* background-color: white; */
-    border: 0;
-    /* background-color: white; */
-    width: 100%;
-    font-family:cursive;
-    font-size: 1rem;
-    color: black;
-    height: fit-content;
-    content: wrap;
-    /* border-radius: 50px; */
-}
-
-.side-bar button:hover{
-    background-color: gold;
-}
-
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:pink; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-
-@keyframes imageshadow {
-    0% {box-shadow: 0 10px 60px rgba(0,0,0,0.5);}
-    25%  {box-shadow: 0 10px 60px rgba(0,0,0,0.5);}
-    50%  {box-shadow: 0 10px 60px rgba(0,0,0,0.5);}
-    75%  {box-shadow: 0 10px 60px rgba(0,0,0,0.5);}
-    100% {box-shadow: 0 10px 60px rgba(0,0,0,0.5);}
-}
-
-.player-media
-{
-    margin: 0;
+.SongsMenu{
+    padding-top: 20px;
     display: flex;
-    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
-    animation: example;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    align-items: center;
-    align-self: center;
-    height: 100vh;
-    width:79vw;
-    float: left;
-    border: 1px solid white;
+    overflow-y: scroll;
+    height: 85vh ;
+    background-color: black;
+    /* #53829b */
 }
 
-.player-media:hover{
-    border: 2px solid gold
+.SongsMenu div{
+    height: 200px;
+    width: 300px;
+    color: white;
+    margin: 10px 10px;
+    background-color: black;
+
 }
 
-.player-media img{
+.SongsMenu div img{
+    height: 200px;
+    width: 300px;
+}
 
-    /* border: 10px solid white; */
-    border-radius: 70px;
-    width: 60%;
-    height: 60%;
-    line-height: 40px;
+
+
+.player{
+    height: 12.6vh;
     background-color: white;
-    animation-name: imageshadow;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    background: #fff;
-    color: #f53192;
-    border: 20px solid #fff;
-    box-shadow: 0 10px 60px rgba(255,26,26,0.35);
-}
-
-.controls{
-    margin: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.player .track{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.controls span{
-    margin: 5px;
+.player .track img{
+    margin: 2rem;
 }
 
-.audio-tg{
-    margin: 10px;
+.player .track h4{
+    margin-right: 2rem;
+}
+.player .controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 270px);
 }
 
-#real_player{
-    display: none;
+.player 
+
+.player #controlsBtn{
+    margin-top: 7px;
 }
-@media only screen and (max-width: 100%) {
-  
-    .side-bar,
-    .player-media{
-        width: 70%;
-    }
+.player div button{
+    background-color: transparent;
+    border: 0;
 }
 
-@media screen and (max-width:767px) {
-    .main{
-        height: 100%;
+#pausebuttton{
+    src: url(/Dashboard/images/pause.png);
+}
+
+#playbuttton{
+    src: url(/Dashboard/images/play.png);
+}
+
+@media only screen and (max-width: 768px) {
+    .SongsMenu{
+        height: 75vh;
     }
-    .side-bar{
-        width: 100%;
-        height: 60%;
+    .player{
+        height: 22.6vh;
     }
-    .player-media{
-        height: 40%;
-        width: 100%;
+    .player .track{
+        height: 20vh;
+        flex-direction: column;
     }
-    
+    .player .track h4{
+        margin-left: 2rem ;
+    }
+    .player #controlsBtn{
+        display: flex;
+        margin-top: 3rem;
+    }
 }

@@ -5,110 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../Dashboard/css/msp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../Dashboard/js/msp.js"></script>
+    <script src="/Dashboard/js/msp.js"></script>
     <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>  -->
     <title>Music Player</title>
 
 </head>
 <body>
-    <div class="main">
-      
-      <div class="player-media" id="pm">
-         
+   <div class="main">
+      <div class="SongsMenu">
+         <div class="card"><button class="btn" onclick="myfunc(1)"><img src="/Dashboard/thumnails/1.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(2)"><img src="/Dashboard/thumnails/2.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(3)"><img src="/Dashboard/thumnails/3.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(4)"><img src="/Dashboard/thumnails/4.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(5)"><img src="/Dashboard/thumnails/5.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(6)"><img src="/Dashboard/thumnails/6.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(7)"><img src="/Dashboard/thumnails/7.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(8)"><img src="/Dashboard/thumnails/8.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(9)"><img src="/Dashboard/thumnails/9.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(10)"><img src="/Dashboard/thumnails/10.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(11)"><img src="/Dashboard/thumnails/11.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(12)"><img src="/Dashboard/thumnails/12.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(13)"><img src="/Dashboard/thumnails/13.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(14)"><img src="/Dashboard/thumnails/14.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(15)"><img src="/Dashboard/thumnails/15.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(16)"><img src="/Dashboard/thumnails/16.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(17)"><img src="/Dashboard/thumnails/17.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(18)"><img src="/Dashboard/thumnails/18.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(19)"><img src="/Dashboard/thumnails/19.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(20)"><img src="/Dashboard/thumnails/20.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(21)"><img src="/Dashboard/thumnails/21.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(22)"><img src="/Dashboard/thumnails/22.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(23)"><img src="/Dashboard/thumnails/23.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(24)"><img src="/Dashboard/thumnails/24.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(25)"><img src="/Dashboard/thumnails/25.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(26)"><img src="/Dashboard/thumnails/26.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(27)"><img src="/Dashboard/thumnails/27.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(28)"><img src="/Dashboard/thumnails/28.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(29)"><img src="/Dashboard/thumnails/29.jpeg" alt=""></button></div>
+         <div class="card"><button class="btn" onclick="myfunc(30)"><img src="/Dashboard/thumnails/30.jpeg" alt=""></button></div>
       </div>
-        <div class="side-bar" id = "SideBar">
-            <div>
-               <button onclick="myfunc('Different_World')">Different world</button>
+      <div class="player">
+            <div class="track">
+               <t id="trackThumbnail"><img src="/Dashboard/thumnails/1.jpeg" height="50px" alt=""></t>
+               <h4 id="pm">Choose a track</h4>
             </div>
-            <div>
-               <button onclick="myfunc('Arcade')">Arcade</button>
+            <div class="controls" id="controls">
+               <div class="seekingTime" style="display: flex;">
+                  <h6 id="startTime" style="margin-right: 2px;">00</h6><input type="range" name="seekbar" id="seekbar"><h6 id="EndTime" style="margin-left: 2px;">00</h6>
+               </div>
+               <div id="controlsBtn">
+                  <button type="button" onclick="audio.play();"><img src="/Dashboard/images/prev.png" alt=""></button>
+                  <button type="button" onclick="audio.play();"><img src="/Dashboard/images/play.png" alt=""></button>
+                  <button type="button" onclick="audio.play();"><img src="/Dashboard/images/next.png" alt=""></button>
+               </div>
             </div>
-            <div>
-               <button onclick="myfunc('AtMyWorst')"  >At my Worst</button>
-            </div>
-            <div>
-               <button onclick="myfunc('Doraemon')" >Doraemon</button>
-            </div>
-            <div>
-               <button onclick="myfunc(`Duniya_(EnglishVersion)`)"  id="btn4">Duniya English Version</button>
-            </div>
-            <div>
-               <button onclick="myfunc('Faded')"  id="btn5">Faded by Alan Walker</button>
-            </div>
-            <div>
-               <button onclick="myfunc('FallinForYou')"  id="btn6">Fallin for you</button>
-            </div>
-            <div>
-               <button onclick="myfunc('FirstKiss')"  id="btn7">First Kiss</button>
-            </div>
-            <div>
-               <button onclick="myfunc('friend_like_you')"  id="btn8">Friend like you </button>
-            </div>
-            <div>
-               <button onclick="myfunc('Gaddi_lamborghini')"  id="btn9">Gaddi lamborghini </button>
-            </div>
-            <div>
-               <button onclick="myfunc('GuitarSikhda')"  id="btn10">Guitar Sikhda </button>
-            </div>
-            <div>
-               <button onclick="myfunc('Hosanna')"  id="btn11">Hosanna </button>
-            </div>
-            <div>
-               <button onclick="myfunc('Iloveyou')"  id="btn12">I love you </button>
-            </div>
-            <div>
-               <button onclick="myfunc('KabhiKabhi')"  id="btn13">Kabhi kabhi aditi </button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn15')"  id="btn14">Kaise Hua </button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn16')"  id="btn15">Kale je libas</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn17')"  id="btn16">Kalla Sohan nhai</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn18')"  id="btn17">Love me like you do </button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn19')"  id="btn18">Mai koi aisa geet Gaon</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn20')"  id="btn19">Na ja</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn21')"  id="btn20">Pahla pyar</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn22')"  id="btn21">Play Date</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn23')"  id="btn22">Qaafirana</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn24')"  id="btn23">Raabta</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn25')"  id="btn25">Rang Gora</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn26')"  id="btn26">Shape of you</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn27')"  id="btn27">Closer</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn28')"  id="btn28">Wallian Harnoor</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn29')"  id="btn29">Zaalima</button>
-            </div>
-            <div>
-               <button onclick="myfunc('btn30')"  id="btn30">Zara si sawari h vo</button>
-            </div>
-            
-        </div>
-    </div>
+
+      </div>
+   </div>
 </body>
 </html>
