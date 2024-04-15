@@ -12,11 +12,11 @@ app.get('/',(req,res)=>{
     res.status(200).render("index");
 });
 
-app.get('/clock.html',(req,res)=>{
+app.get('/clock',(req,res)=>{
     res.status(200).render("clock");
 });
 
-app.get('/msp.html',(req,res)=>{
+app.get('/music',(req,res)=>{
     res.status(200).render("msp");
 });
 
