@@ -212,7 +212,9 @@ section{
     color: black;
 }
 
-
+#reactMusic{
+    
+}
 
 /*  key frames  */
 
@@ -224,3 +226,4 @@ section{
         opacity: 0;
     }
 }
+

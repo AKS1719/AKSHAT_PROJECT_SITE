@@ -48,19 +48,22 @@
     margin: 10px;
     height: 20rem;
     background-color: red;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 #clock{
     background-image: url("/Dashboard/images/clc.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #music{
     background-image: url("/Dashboard/images/msc.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#reactMusic{
+    background-image: url('/Dashboard/images/reactMusic.jpeg');
 }
 
 @keyframes slideRight {
